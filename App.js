@@ -3,10 +3,10 @@ import { StyleSheet, Button, View, SafeAreaView, Text, Alert, TextInput, ScrollV
 import Constants from 'expo-constants';
 import {customStyle} from './style';
 
-
+//Nico mascatuerca
 export default function App() {
   return (
-    <View style={customStyle.container}> 
+    <View style={customStyle.container}>
       <View style={customStyle.subContainer}>
         <Text style={customStyle.Title}>ABM-BS</Text>
       </View>
