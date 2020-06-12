@@ -6,7 +6,7 @@ import {customStyle} from './style';
 
 export default function App() {
   return (
-    <View style={customStyle.container}>
+    <View style={customStyle.container}> 
       <View style={customStyle.subContainer}>
         <Text style={customStyle.Title}>ABM-BS</Text>
       </View>
