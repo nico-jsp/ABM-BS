@@ -1,4 +1,6 @@
+# Dependencies directory
 node_modules/**/*
+
 .expo/*
 npm-debug.*
 *.jks
@@ -12,3 +14,26 @@ web-report/
 
 # macOS
 .DS_Store
+
+# Logs
+logs
+*.log
+.DS_Store
+
+npm-debug.log*
+
+# Optional npm cache directory
+.npm
+
+#IDEs
+.idea
+.vscode
+
+# code testing coverage
+coverage
+
+# distribution files
+dist
+
+# Database files
+.database
