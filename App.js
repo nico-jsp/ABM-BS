@@ -6,6 +6,7 @@ import {customStyle} from './style';
 //Nico mascatuerca
 //in 4rielo's version Nico is still a mascatuerca
 //Ramiro, is this working?
+//Created my own branch to work with docker
 export default function App() {
   return (
     <View style={customStyle.container}>
