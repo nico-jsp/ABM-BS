@@ -5,6 +5,7 @@ import {customStyle} from './style';
 
 //Nico mascatuerca
 //in 4rielo's version Nico is still a mascatuerca
+//Ramiro, is this working?
 export default function App() {
   return (
     <View style={customStyle.container}>
