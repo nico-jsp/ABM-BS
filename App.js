@@ -4,6 +4,7 @@ import Constants from 'expo-constants';
 import {customStyle} from './style';
 
 //Nico mascatuerca
+//in 4rielo's version Nico is still a mascatuerca
 export default function App() {
   return (
     <View style={customStyle.container}>
