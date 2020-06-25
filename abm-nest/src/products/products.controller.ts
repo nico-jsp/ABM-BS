@@ -8,12 +8,12 @@ export class ProductsController {
     }
     
     @Post()
-    addProduct(
+    async addProduct(
         @Body('title') prodTitle: string, 
         @Body('description') prodDesc: string,
         @Body('price') prodPrice: number
     ) {
-        const generatedId = this.productsService.insertProduct(
+        const generatedId = await this.productsService.insertProduct(
             prodTitle,
             prodDesc,
             prodPrice,
@@ -22,8 +22,9 @@ export class ProductsController {
     }
 
     @Get()
-    getAllProducts(){
-        return this.productsService.getProducts();
+    async getAllProducts(){
+        const products = await this.productsService.getProducts();
+        return products;
     }
 
     @Get(':id')
@@ -32,19 +33,19 @@ export class ProductsController {
     }
 
     @Patch(':id')
-    updateProduct(
+    async updateProduct(
         @Param('id') prodId: string, 
         @Body('title') prodTitle: string, 
         @Body('description') prodDesc: string, 
         @Body('price') prodPrice: number){
-            this.productsService.updateProduct(prodId, prodTitle, prodDesc, prodPrice);
+            await this.productsService.updateProduct(prodId, prodTitle, prodDesc, prodPrice);
             return null;
 
     }
 
     @Delete(':id')
-    removeProduct(@Param('id') prodId: string){
-        this.productsService.deleteProduct(prodId);
+    async removeProduct(@Param('id') prodId: string){
+        await this.productsService.deleteProduct(prodId);
         return null;
     }
     

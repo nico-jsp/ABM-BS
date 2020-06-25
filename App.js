@@ -3,7 +3,7 @@ import { StyleSheet, Button, View, SafeAreaView, Text, Alert, TextInput, ScrollV
 import Constants from 'expo-constants';
 import {customStyle} from './style';
 
-//Nico mascatuerca
+//Nico no mascatuerca, el Ari y el Rami si
 export default function App() {
   return (
     <View style={customStyle.container}>
